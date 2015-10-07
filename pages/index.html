@@ -12,7 +12,18 @@
 		    Krishna House
 		  
 		</title>
+		<?php
+			$visitor_email = $_POST['email'];
+			
+		?>
 	
+		<?php
+		$email_from = 'shreyasmoudgalya009@gmail.com';
+		$email_subject = "New Form submission";
+		$email_body = "You have received a new message from the user $name.\n".
+                            "Here is the message:\n $message".
+		?>
+
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
@@ -96,8 +107,8 @@
 				<div class="col-md-7">
 					<div class="lp-element animate" data-animate="fadeInDown">
 						<h1>Krishna House</h1>
-						<p class="lead">We Make Miracles Happen!</p>
-						<p><a class="btn btn-primary btn-lg" role="button" href="#newsletter">Sign Up Now</a> <a class="btn btn-danger btn-lg" role="button" href="#gallery">View Event Gallery</a></p>
+						<p class="lead">Feel the Warmth!</p>
+						<p><a class="btn btn-primary btn-lg" role="button" href="https://www.google.com/maps/place/IIT+Krishna+House/@41.8372967,-87.6231308,17z/data=!3m1!4b1!4m2!3m1!1s0x880e2c7462303491:0xbe95e5fab6457f30">Visit Us</a> <a class="btn btn-danger btn-lg" role="button" href="#gallery">View Event Gallery</a></p>
 					</div>
 				</div>
 			</div>
@@ -114,7 +125,7 @@
 				<div class="col-md-12">
 					<!-- Title -->
 					<div class="overview animate" data-animate="flipInX">
-						<h1><strong>Krishna House</strong> is a Spiritual Centre for All</h1>
+						<h1><strong>KRISHNA HOUSE</strong> IS CHICAGO'S SPIRITUAL OASIS</h1>
 						<p class="lead">A meeting place for spiritual seekers to share ideas and learn from our mentors about the 5000 year old Vedic wisdom and meditation practices. </p>
 					</div>
 				</div>
@@ -123,7 +134,7 @@
 						<span class="glyphicon glyphicon-home"></span>
 						<h3>Knowledge</h3>
 						<p>We make ancient Vedic wisdom relevant for modern times. Life becomes a lot easier to navigate with a hint of spirituality and a dash of loving relationships. Join a study group near you or over Skype and brighten your life with the torch of knowledge.</p>
-						<button type="button" class="btn btn-primary btn-md btn-rocket btn-rocket-default">Learn More</button>
+						
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -131,7 +142,7 @@
 						<span class="glyphicon glyphicon-stats"></span>
 						<h3>Lifestyle</h3>
 						<p>Our philosophy is practical and is applicable in every aspect of our lives, whether it is work, food, recreation or mediation.  We learn to live in harmony with the laws of nature and extend that knowledge to others through our various outreach activities.</p>
-						<button type="button" class="btn btn-primary btn-md btn-rocket btn-rocket-default">Learn More</button>
+						
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -139,7 +150,7 @@
 						<span class="glyphicon glyphicon-tree-conifer"></span>
 						<h3>Service</h3>
 						<p>True happiness comes when our desire to love and be loved is fulfilled. To develop love for God and cultivate loving relationships with all living entities is the basis of Bhakti Yoga. So we invite you to come and learn more about this process of selfless loving service.</p>
-						<button type="button" class="btn btn-primary btn-md btn-rocket btn-rocket-default">Learn More</button>
+						
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -147,7 +158,7 @@
 						<span class="glyphicon glyphicon-heart"></span>
 						<h3>Get Involved</h3>
 						<p>We strive to give you the genuine Hare Krishna experience, based on the principle of selfless loving service. Please let us know how you would like us to serve you.</p>
-						<button type="button" class="btn btn-primary btn-md btn-rocket btn-rocket-default">Learn More</button>
+						
 					</div>
 				</div>
 			</div>
@@ -164,17 +175,17 @@
 			<div class="row">
 				<div class="col-md-12 sol-sm-12">
 					<div class="overview animate" data-animate="flipInX">
-						<h1><strong>Kirtans</strong> Every Thrusdays</h1>
-						<p class="lead">Immerse Yourself in a Spiritual Musical. Also a friendly place to laugh, learn and make friends. </p>
+						<h1><strong>Kirtans</strong> Every Thursday at 8pm</h1>
+						<p class="lead">Experience the joy of collective meditation by soaking your soul in transcendental music. Also, a friendly place to laugh, learn and make friends. </p>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12"><img class="animate img-responsive" data-animate="fadeInLeft" src="http://bit.ly/1NqZzI6" alt=""/></div>
+				<div class="col-md-6 col-sm-12"><img class="animate img-responsive" data-animate="fadeInLeft" src="http://s13.postimg.org/fbo2uyfgn/DSC1979.jpg" alt=""/></div>
 				<div class="col-md-6 col-sm-12">
 					<div class="content-block animate" data-animate="fadeInRight" style="margin-top: 60px;">
-						<h2>Free Dinner</h2>
-						<p class="lead">Join Us for the lively Musical. The Kirtans are followed by Dinner.</p>
+						<h2>Dinner Discussions</h2>
+						<p class="lead">One of the ways we express our love and gratitude is through food. Our dinners are 100% vegetarian and karma free and you get to choose the topic of conversation over the dinner table :-).</p>
 						<hr />
-						<p>Collaboratively Collaboratively Collaboratively Collaboratively Collaboratively Collaboratively Collaboratively Collaboratively </p>
+						<p></p>
 						
 					</div>
 				</div>
@@ -192,8 +203,8 @@
 			<div class="row">
 				<div class="col-md-12 sol-sm-12">
 					<div class="overview animate" data-animate="flipInY">
-						<h1><strong>Think Different</strong> Work Smart</h1>
-						<p class="lead">We Make Miracles Happen. Join Us in the Once in A Lifetime Adventure! </p>
+						<h1><strong>Think Different</strong> <i>Work Smart</i></h1>
+						<p class="lead">Feel the Warmth. Experience Transcendence! </p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
@@ -238,22 +249,22 @@
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="http://bit.ly/1O9VqKf" title="This is the description">
-						<img src="http://bit.ly/1O9VqKf" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+						<img src="http://s11.postimg.org/73bat9ez7/qwe.jpg" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="http://bit.ly/1FGZ5Ho" title="This is the description">
-						<img src="http://bit.ly/1FGZ5Ho" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+						<img src="http://s10.postimg.org/f9xbkvle1/abc.jpg" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="http://bit.ly/1FGZ5Ho" title="This is the description">
-						<img src="http://bit.ly/1FGZ5Ho" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+						<img src="http://s24.postimg.org/hzhfk649h/DSC2233.jpg" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6">
 					<a href="http://bit.ly/1FGZ5Ho" title="This is the description">
-						<img src="http://bit.ly/1FGZ5Ho" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+						<img src="http://bit.ly/1NqZzI6" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
 					</a>
 				</div>
 				
@@ -273,13 +284,14 @@
 				<div class="col-md-12">
 					<div class="overview">
 						<h1><strong>Subscribe Newsletter</strong></h1>
-						<p class="lead">Join thousands of awesome people, there's only one thing to do. Subscribe !</p>
+						<p class="lead">Join hundreds of awesome people, there's only one thing to do. Subscribe !</p>
 					</div>
-					<form role="form">
+					<form method="post" name="myemailform" action="form-to-email.php" role="form">
 						<div class="input-group">
-			            	<input type="text" class="form-control input-lg" placeholder="Enter email">
+			            	<input type="text" name="email" class="form-control input-lg" placeholder="Enter E-mail">
 			            	<span class="input-group-btn">
 			              		<button class="btn btn-lg btn-default" type="button">Subscribe Me</button>
+								<input type="submit" name='submit' value="submit">
 			            	</span>
 			          	</div>
 		          	</form>
