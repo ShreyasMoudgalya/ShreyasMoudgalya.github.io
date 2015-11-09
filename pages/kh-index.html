@@ -12,17 +12,6 @@
 		    Krishna House
 		  
 		</title>
-		<?php
-			$visitor_email = $_POST['email'];
-			
-		?>
-	
-		<?php
-		$email_from = 'shreyasmoudgalya009@gmail.com';
-		$email_subject = "New Form submission";
-		$email_body = "You have received a new message from the user $name.\n".
-                            "Here is the message:\n $message".
-		?>
 
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -286,12 +275,13 @@
 						<h1><strong>Subscribe Newsletter</strong></h1>
 						<p class="lead">Join hundreds of awesome people, there's only one thing to do. Subscribe !</p>
 					</div>
-					<form method="post" name="myemailform" action="form-to-email.php" role="form">
+					<!--<form method="post" name="myemailform" action="form-to-email.php" role="form"> -->
+					<form name="myemailform" role="form">
 						<div class="input-group">
 			            	<input type="text" name="email" class="form-control input-lg" placeholder="Enter E-mail">
 			            	<span class="input-group-btn">
 			              		<button class="btn btn-lg btn-default" type="button">Subscribe Me</button>
-								<input type="submit" name='submit' value="submit">
+								<!--<input type="submit" name='submit' value="submit"> -->
 			            	</span>
 			          	</div>
 		          	</form>
