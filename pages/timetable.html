@@ -13,6 +13,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,14 +24,58 @@
   ga('send', 'pageview');
 
 	</script>
+	
+	
+	
+		
+	<script type="text/javascript">
+	 var imlocation = "img-random\";
+	 var currentdate = 0;
+	 var image_number = 0;
+	 function ImageArray (n) {
+	   this.length = n;
+	   for (var i =1; i <= n; i++) {
+		 this[i] = ' '
+	   }
+	 }
+	 image = new ImageArray(3)
+	 image[0] = '1.jpg'
+	 image[1] = '2.jpg'
+	 image[2] = '3.jpg'
+	 var rand = 60/image.length
+	 function randomimage() {
+		currentdate = new Date()
+		image_number = currentdate.getSeconds()
+		image_number = Math.floor(image_number/rand)
+		return(image[image_number])
+	 }
+	 
+	function addRow() {
+    var div = document.createElement('img');
+
+    div.className = 'img-responsive';
+
+    div.innerHTML = "<img src='" + imlocation + randomimage()+ "'>";
+
+    document.getElementById('content').appendChild(div);
+	}
+
+
+	document.write("<img src='" + imlocation + randomimage()+ "'>");
+	
+	</script>
+
+
+
 	</head>
 
 
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<img class = "img-responsive" src="http://placekitten.com/1000/400" alt="My Work">
+				<div class="col-md-12" id="content">
+					<!--<img class = "img-responsive" src="http://placekitten.com/1000/400" alt="My Work"> -->
+					
 				</div>
 			</div>
 			<div class="row">
@@ -56,65 +101,68 @@
                 
                 <td>8:35 - 9:50</td>
                 <td></td>
+                <td>ECE 213</td>
                 <td></td>
+                <td>ECE 213</td>
                 <td></td>
-                <td>ECE 497 Lab</td>
-                <td>TA CS 115</td>
 		
             </tr>
             <tr>
                 <td>10:00 - 11:15</td>
-                <td>ECE 211</td>
                 <td></td>
-                <td>ECE 211</td>
-                <td>ECE 497 Lab</td>
+                <td>MATH 474</td>
+                <td></td>
+                <td>MATH 474</td>
                 <td></td>
                 
 		
             </tr>
             <tr>
                 <td>11:25 - 12:40</td>
+                <td>MATH 230</td>
+                <td>PHYS 221</td>
+                <td>MATH 230</td>
+                <td>PHYS 221</td>
                 <td></td>
-                <td></td>
-                <td>CS 115 OH</td>
-                <td>CS 115 OH</td>
-                <td>TA CS 115</td>
                 
             </tr>
 		
 	<tr>
                 <td>1:50 - 3:05</td>
-                <td>ECE 242</td>
-                <td>TA CS 116</td>
-                <td>ECE 242</td>
-                <td>TA CS 116</td>
                 <td></td>
+                <td>CS 351 LAB</td>
+                <td>CS 351</td>
+                <td>ECE 213 LAB</td>
+                <td>CS 351</td>
             </tr>
 <tr>
                 <td>3:15 - 4:30</td>
                 <td></td>
-                <td>CS 331 Lab</td>
-                <td>CS 331</td>
-                <td>CS 116 OH</td>
-                <td>CS 331</td>
+                <td></td>
+                <td></td>
+                <td>ECE 213 LAB</td>
+                <td></td>
          
             </tr>
+
 <tr>
-                <td>5:00 - 6:45</td>
+                <td>6:25 - 7:40</td>
                 <td></td>
-                <td>Math 251</td>
+                <td>PHYS 221 LAB</td>
+                <td>IPRO 397</td>
                 <td></td>
-                <td>Math 251</td>
                 <td></td>
             </tr>
+			
 <tr>
-                <td>6:55 - 8:40</td>
+                <td>7:50 - 9:05</td>
                 <td></td>
-                <td>Math 252</td>
+                <td>PHYS 221 LAB</td>
+                <td>IPRO 397</td>
                 <td></td>
-                <td>Math 252</td>
                 <td></td>
             </tr>
+			
         </tbody>
     </table>
 </div>
